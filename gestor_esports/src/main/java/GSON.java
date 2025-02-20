@@ -1,5 +1,3 @@
-package esports.gestor.libs;
-
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 

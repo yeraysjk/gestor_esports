@@ -35,10 +35,10 @@ javafx {
 }
 
 dependencies {
-
-    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+    implementation files('src/main/java/libs/gson-2.12.1.jar')
+    implementation files('src/main/java/libs/json-simple-1.1.1.jar')
 }
+
 
 test {
     useJUnitPlatform()
