@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx/11.0"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="esports.gestor.Controladors.MainController"
+      stylesheets="@style.css">
+
+    <Label text="Gestió de Tornejos d'eSports"/>
+
+    <Button text="Gestió de Tornejos" onAction="#obrirGestioTornejos"/>
+    <Button text="Gestió de Participants" onAction="#obrirGestioParticipants"/>
+    <Button text="Desar i Carregar Dades" onAction="#obrirGestioDades"/>
+
+</VBox>

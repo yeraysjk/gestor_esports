@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx/11.0"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="esports.gestor.Controladors.DadesController"
+      stylesheets="@style.css">
+
+    <Label text="Gestió de Dades"/>
+
+    <Button text="Desar Tornejos en JSON" onAction="#desarDades"/>
+    <Button text="Carregar Tornejos des de JSON" onAction="#carregarDades"/><Button fx:id="EnrereButton" mnemonicParsing="false" onAction="#enrereButton" text="&lt;&lt;&lt;" />
+
+
+</VBox>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="15" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esports.gestor.Controladors.TorneigController">
+
+    <Label text="Gestió de Tornejos" />
+
+    <TextField fx:id="nomTorneigField" promptText="Nom del Torneig" />
+    <TextField fx:id="dataTorneigField" promptText="Data (YYYY-MM-DD)" />
+    <TextField fx:id="jocTorneigField" promptText="Joc" />
+    <TextField fx:id="formatTorneigField" promptText="Format" />
+    <TextField fx:id="premisTorneigField" promptText="Premis" />
+
+    <Button fx:id="crearTorneigButton" onAction="#crearTorneig" text="Crear Torneig" />
+
+    <Label text="Llista de Tornejos" />
+    <ListView fx:id="llistaTornejos" />
+
+    <HBox spacing="10">
+        <Button fx:id="modificarTorneigButton" onAction="#modificarTorneig" text="Modificar" />
+        <Button fx:id="EliminarTorneigButton" onAction="#eliminarTorneig" text="Eliminar" />
+      <Button fx:id="EnrereButton" mnemonicParsing="false" onAction="#enrereButton" text="&lt;&lt;&lt;" />
+    </HBox>
+
+</VBox>

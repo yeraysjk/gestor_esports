@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx/11.0"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="esports.gestor.Controladors.ParticipantsController"
+      stylesheets="@style.css">
+
+    <Label text="Gestió de Participants"/>
+
+    <TextField fx:id="nomParticipantField" promptText="Nom"/>
+    <TextField fx:id="nicknameParticipantField" promptText="Nickname"/>
+    <TextField fx:id="equipParticipantField" promptText="Equip"/>
+    <TextField fx:id="puntuacioParticipantField" promptText="Puntuació"/>
+
+    <Button text="Afegir Participant"/>
+
+    <Label text="Llista de Participants"/>
+    <ListView fx:id="llistaParticipants"/>
+
+    <HBox spacing="10">
+        <Button text="Modificar"/>
+        <Button text="Eliminar"/>
+        <Button text="Ordenar per Puntuació"/>
+        <Button fx:id="EnrereButton" mnemonicParsing="false" onAction="#enrereButton" text="&lt;&lt;&lt;" />
+
+    </HBox>
+
+</VBox>
